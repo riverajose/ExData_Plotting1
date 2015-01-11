@@ -6,7 +6,7 @@ data <- subset(fulldata, Date == "1/2/2007" | Date == "2/2/2007")
 
 #plot histogram, first convert global_active_power to numeric
 
-hist(as.numeric(data$Global_active_power), col = "red", 
+hist(as.numeric(data$Global_active_power)/1000, col = "red", 
      main = "Global Active Power", xlab = "Global Active Power (kilowatts)")
 
 #output graph
